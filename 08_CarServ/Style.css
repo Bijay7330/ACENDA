@@ -1,0 +1,3333 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/*---------- Navbar section -----------*/
+
+nav .container .row {
+  min-height: 13vh;
+}
+
+/* Navbar upper */
+
+.nav-upper {
+  padding: 10px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  background-color: #7a7a733d;
+}
+
+.nav-upper-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-upper-left .address {
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: rgba(0, 0, 0, 0.537);
+}
+
+.address .fa-solid {
+  color: #c80011;
+}
+
+.nav-upper-left .time {
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: rgba(0, 0, 0, 0.538);
+}
+
+.time .fa-solid {
+  color: #c80011;
+}
+
+.nav-upper-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-upper-right .phone {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.547);
+}
+
+.nav-upper-right .phone .fa-phone {
+  color: #c80011;
+}
+
+.nav-icon {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.nav-icon .fa-brands {
+  font-size: 25px;
+  color: #c80011;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.nav-icon .fa-brands:hover {
+  color: #c80011af;
+}
+
+/* Navbar lower */
+
+.nav-lower {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 25px;
+  font-weight: 600;
+  color: #c80011;
+  margin-left: 50px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links ul li {
+  list-style-type: none;
+}
+
+.nav-links ul li a {
+  text-decoration: none;
+  font-size: 15px;
+  color: black;
+  font-weight: 600;
+  transition: all 0.4s;
+}
+
+.nav-links ul li a:hover {
+  color: #c80011;
+}
+
+#home {
+  color: #c80011;
+  transition: all 0.4s;
+}
+
+#home:hover {
+  color: rgba(0, 0, 0, 0.664);
+}
+
+#pages {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+#pages .fa-angle-down {
+  font-size: 14px;
+}
+
+.nav-btn {
+  height: 60px;
+  width: 200px;
+  background-color: #c80011;
+  color: #ffffff;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.nav-btn:hover {
+  background-color: #c80011b4;
+}
+
+.hamburgur-menu {
+  margin-right: 50px;
+  display: none;
+}
+
+.hamburgur-menu .ri-menu-3-line {
+  font-size: 25px;
+  color: #c80011;
+}
+
+/*--------- Header section --------*/
+header {
+  min-height: 86vh;
+  background-image: url("./Image/emile-guillemot-ci7gkM_29wA-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  opacity: 0.7;
+}
+
+header .container .row {
+  position: relative;
+  z-index: 3;
+  min-height: 86vh;
+  padding: 100px 100px;
+  display: flex;
+  /* align-items:center; */
+}
+
+.header-left {
+  height: inherit;
+  width: 50%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.header-left .ri-arrow-left-s-line {
+  color: #ffffff70;
+  font-size: 70px;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+.header-left .ri-arrow-left-s-line:hover {
+  color: #ffffff;
+}
+
+.header-left .header-left-text p {
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.header-left .header-left-text .title {
+  font-size: 60px;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.header-btn {
+  height: 60px;
+  width: 200px;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #c80011;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+.header-btn:hover {
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+.header-right {
+  height: inherit;
+  width: 50%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.header-right .header-right-img {
+  height: 400px;
+  width: 100%;
+  background-image: url("./Image/vadym-kudriavtsev-eH6UM3_WCy0-unsplash-removebg-preview\(1\).png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header-right .header-right-icon .ri-arrow-right-s-line {
+  font-size: 70px;
+  color: #ffffff93;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.header-right .header-right-icon .ri-arrow-right-s-line:hover {
+  color: #ffffff;
+}
+
+/*========== Main section ========*/
+
+/*--------- Service section ----------*/
+
+.service .container .row {
+  min-height: 50vh;
+  padding: 100px 100px;
+  display: flex;
+  gap: 100px;
+  align-items: center;
+}
+
+.service-items {
+  width: 33.33%;
+  display: flex;
+  gap: 10px;
+}
+
+.service-items .service-item-icon .fa-solid {
+  font-size: 50px;
+  color: #c80011;
+}
+
+.service-items .title {
+  font-size: 20px;
+  color: black;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.service-items p {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.475);
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.service-items .read-more {
+  font-size: 16px;
+  color: #1a2980a8;
+  font-weight: 400;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.service-items .read-more:hover {
+  color: #0000009c;
+}
+
+.service-item2 {
+  background-color: rgba(128, 128, 128, 0.181);
+  height: 200px;
+  padding: 50px 20px;
+}
+
+/*--------- About Section ----------*/
+
+.about .container .row {
+  min-height: 60vh;
+  padding: 50px 100px;
+  display: flex;
+  gap: 50px;
+}
+
+.about-left {
+  width: 50%;
+  height: inherit;
+  background-image: url("./Image/lucas-clarysse-XUo09J8yuN0-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.about-right {
+  height: inherit;
+  width: 50%;
+}
+
+.about-right p {
+  font-size: 18px;
+  font-weight: 600;
+  color: #c80011;
+  margin-bottom: 10px;
+}
+
+.about-right .title {
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.about-right .title span {
+  color: #c80011;
+}
+
+.para {
+  font-size: 18px;
+  color: #00000084;
+  line-height: 25px;
+  margin-bottom: 10px;
+}
+
+.about-right-items {
+  display: flex;
+  gap: 10px;
+}
+
+.about-right-items .number {
+  height: 60px;
+  width: 60px;
+  background-color: rgba(128, 128, 128, 0.287);
+  color: #0b2447;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+
+.about-right-items .title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.about-right .para {
+  font-size: 16px;
+  color: #00000082;
+  margin-bottom: 20px;
+}
+
+.about-right-item3 {
+  margin-bottom: 20px;
+}
+
+.about-right .about-right-btn {
+  height: 50px;
+  width: 200px;
+  color: #ffffff;
+  background-color: #c80011;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+.about-right .about-right-btn:hover {
+  color: #c80011;
+  background-color: transparent;
+  border: 2px solid #e43636;
+}
+
+/*------- Review Section -------*/
+
+.review {
+  min-height: 30vh;
+  background-image: url("./Image/thibault-lam-tran-3XGX36N2T6w-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.review::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000000;
+  opacity: 0.7;
+}
+
+.review .container .row {
+  padding: 50px 100px;
+  min-height: 30vh;
+  position: relative;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.review-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.review-items .fa-solid {
+  font-size: 30px;
+  color: #ffffff;
+}
+
+.review-items .number {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.review-items p {
+  font-size: 18px;
+  color: #ffffffc0;
+  font-weight: 500;
+}
+
+/*-------- Our Servicing Section --------*/
+
+.our-service .container .row {
+  min-height: 80vh;
+  padding: 100px;
+}
+
+.our-para {
+  color: #c80011;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.our-title {
+  font-size: 40px;
+  font-weight: 600;
+  color: #0b2447;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.our-service-item-container {
+  display: flex;
+  gap: 50px;
+}
+
+.our-service-item-container .our-service-left,
+.our-service-middle,
+.our-service-right {
+  width: 33.33%;
+}
+
+.our-service-item-container .our-service-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.our-service-item-container .our-service-left-items {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 20px;
+  background-color: #eeefe0;
+}
+
+.our-service-item-container .our-service-left-item1 {
+  background-color: #c80011;
+}
+
+.our-service-item-container .our-service-left .our-service-left-item1 p {
+  color: #ffffff;
+}
+
+.our-service-item-container
+  .our-service-left
+  .our-service-left-item1
+  .fa-solid {
+  color: #ffffff;
+}
+
+.our-service-left .our-service-left-items p {
+  font-size: 25px;
+  font-weight: 600;
+  color: #0b2447;
+}
+
+.our-service-left .our-service-left-items .fa-solid {
+  font-size: 30px;
+  color: #c80011;
+}
+
+.our-service-middle {
+  background-image: url("./Image/sten-rademaker-UZUzvJEvKnI-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.our-service-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.our-service-right h1 {
+  color: #0b2447;
+}
+
+.our-service-right p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #0b244795;
+}
+
+.our-service-right .our-service-right-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.our-service-item-container .our-service-right-items {
+  font-size: 14px;
+  color: #0b2447b0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.our-service-item-container .our-service-right-items .fa-solid {
+  font-size: 12px;
+  color: #78c841;
+}
+
+.our-service-right-btn {
+  height: 60px;
+  width: 200px;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #c80011;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.our-service-right-btn:hover {
+  background-color: transparent;
+  color: #c80011;
+  border: 2px solid #c80011;
+}
+
+/*------- Book a service section --------*/
+.book-service {
+  min-height: 60vh;
+  background-image: url("./Image/emile-guillemot-ci7gkM_29wA-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.book-service::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000000;
+  opacity: 0.7;
+}
+
+.book-service .container .row {
+  min-height: 60vh;
+  position: relative;
+  z-index: 3;
+  padding: 0 100px;
+  display: flex;
+  gap: 30px;
+}
+
+.book-service-left {
+  height: inherit;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.book-service-left h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.book-service-left p {
+  font-size: 18px;
+  color: #ffffffd7;
+  line-height: 30px;
+}
+
+.book-service-right {
+  height: inherit;
+  width: 50%;
+  background-color: #c80011;
+  padding: 50px 50px;
+}
+
+.book-service-right h1 {
+  font-size: 32px;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.book-right-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 60px);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.book-grid-item1 {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.book-grid-item2 {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.book-grid-item3 {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.book-grid-item4 {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.book-grid-item5 {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.book-grid-items input,
+select,
+textarea {
+  width: 100%;
+  height: 100%;
+  padding: 10px 10px;
+  font-size: 14px;
+}
+
+.book-now {
+  background-color: #122758;
+  color: #ffffff;
+  width: 100%;
+  height: 50px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.book-now:hover {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+/*-------- Our expert technican -------*/
+
+.technician .container .row {
+  min-height: 70vh;
+  padding: 50px 100px;
+}
+
+.technician-para {
+  font-size: 16px;
+  font-weight: 600;
+  color: #c80011;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.technician-title {
+  font-size: 40px;
+  font-weight: 800;
+  color: #112854;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.technician-item-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+
+.technician-items {
+  width: 25%;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.technician-items:hover {
+  transform: scale(1.03);
+}
+
+.technician-items .upper {
+  width: 100%;
+  height: 300px;
+}
+
+.technician-item1 .upper {
+  background-image: url("./Image/graham-mansfield-7jCYw6a2Wao-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.technician-item2 .upper {
+  background-image: url("./Image/abdullah-ali-1w9I6H4aftw-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.technician-item3 .upper {
+  background-image: url("./Image/pablo-soriano-Hnp-cs9QVOc-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.technician-item4 .upper {
+  background-image: url("./Image/dwayne-joe-eX_xrPwRkBc-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.technician-items .lower {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #f2f2f2;
+}
+
+.technician-items .name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #112854;
+}
+
+.technician-items .designation {
+  font-size: 14px;
+  font-weight: 400;
+  color: #1128549a;
+}
+
+/*------- Testimonial section --------*/
+
+.testimonial .container .row {
+  min-height: 70vh;
+  padding: 50px 200px;
+}
+
+.testimonial-para {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: #c80011;
+  margin-bottom: 30px;
+}
+
+.testimonial-title {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 600;
+  color: #112854;
+  margin-bottom: 30px;
+}
+
+.testimonial-container {
+  display: flex;
+  gap: 50px;
+}
+
+.testimonial-items {
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.testimonial-items .face {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 10px solid #f2f2f2;
+}
+
+.testimonial-items .face img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.testimonial-items .detail .name {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: #112854;
+  margin-bottom: 5px;
+}
+
+.testimonial-items .detail .designation {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: #112854a3;
+}
+
+.testimonial-items .text {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.testimonial-items .text p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000a0;
+  text-align: center;
+}
+
+.testimonial-item2 .text {
+  background-color: #c80011;
+}
+
+.testimonial-item2 .text p {
+  color: #ffffff;
+}
+
+/*--------- Footer section --------*/
+
+/* Footer heigher */
+footer {
+  min-height: 40vh;
+  background-image: url("./Image/emile-guillemot-ci7gkM_29wA-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+footer::before {
+  position: absolute;
+  z-index: 2;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  opacity: 0.8;
+}
+
+footer .container .row {
+  min-height: 40vh;
+  position: relative;
+  z-index: 3;
+  padding: 20px 200px;
+}
+
+.footer-upper {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0;
+  border-bottom: 2px solid #ffffff29;
+}
+
+.footer-upper .footer-items {
+  width: 25%;
+}
+
+.footer-upper .footer-items .footer-header {
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.footer-upper .footer-items p {
+  color: #ffffffc9;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.footer-item1 p {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.footer-item1 .social {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.footer-item2 p {
+  margin-bottom: 50px;
+}
+
+.footer-item1 .social .fa-brands {
+  font-size: 30px;
+  color: #ffffffa2;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.footer-upper .social .fa-brands:hover {
+  color: #ffffff;
+}
+
+.footer-item4 .search {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.footer-item4 .search input {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  z-index: 1;
+  padding-left: 10px;
+}
+
+.footer-item4 .search input:focus {
+  outline: none;
+}
+
+.footer-item4 p {
+  margin-bottom: 10px;
+}
+
+.footer-item4 .search .sign-up {
+  position: absolute;
+  z-index: 2;
+  height: 40px;
+  width: 90px;
+  background-color: #c80011;
+  color: #ffffff;
+  border: none;
+  font-size: 14px;
+  right: 5px;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+.footer-item4 .search .sign-up:hover {
+  background-color: transparent;
+  border: 2px solid #c80011;
+  color: #c80011;
+  font-weight: 500;
+}
+
+/* Footer lower */
+
+.footer-lower {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.footer-lower p {
+  color: #ffffff80;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.footer-lower p:hover {
+  color: #ffffff;
+}
+
+.footer-lower .footer-lower-nav {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.footer-lower .footer-lower-nav p {
+  color: #ffffff94;
+  font-size: 14px;
+  padding-right: 20px;
+  border-right: 1px solid #ffffff89;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.footer-lower .footer-lower-nav p:hover {
+  color: #ffffff;
+}
+
+.footer-lower .footer-lower-nav #faqs {
+  border-right: none;
+  padding-right: 0;
+}
+
+
+
+
+
+
+/*========= Responsive Design ===========*/
+
+/*------- For medium screen only -------*/
+
+@media (max-width: 1024px) {
+  /*---------- Navbar section -----------*/
+
+  nav .container .row {
+    min-height:5vh;
+  }
+
+  /* Navbar upper */
+
+  .nav-upper {
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    background-color: #7a7a733d;
+  }
+
+  .nav-upper-left {
+    display: flex;
+    align-items: center;
+    gap:10px;
+  }
+
+  .nav-upper-left .address {
+    font-size:11px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: rgba(0, 0, 0, 0.537);
+  }
+
+  .address .fa-solid {
+    color: #c80011;
+  }
+
+  .nav-upper-left .time {
+    font-size:11px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: rgba(0, 0, 0, 0.538);
+  }
+
+  .time .fa-solid {
+    color: #c80011;
+  }
+
+  .nav-upper-right {
+    display: flex;
+    align-items: center;
+    gap:10px;
+  }
+
+  .nav-upper-right .phone {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size:11px;
+    color: rgba(0, 0, 0, 0.547);
+  }
+
+  .nav-upper-right .phone .fa-phone {
+    color: #c80011;
+  }
+
+  .nav-icon {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .nav-icon .fa-brands {
+    padding:0 ;
+    font-size:18px;
+    color: #c80011;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  .nav-icon .fa-brands:hover {
+    color: #c80011af;
+  }
+
+  /* Navbar lower */
+
+  .nav-lower {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px 0;
+  }
+
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size:20px;
+    font-weight: 600;
+    color: #c80011;
+    margin-left:25px;
+  }
+
+  .nav-links {
+    display:none;
+  }
+
+  .hamburgur-menu {
+    margin-right:30px;
+    display:block;
+  }
+
+  .hamburgur-menu .ri-menu-3-line {
+    font-size:20px;
+    color: #c80011;
+  }
+
+  /*--------- Header section --------*/
+  header {
+    min-height:50vh;
+    background-image: url("./Image/emile-guillemot-ci7gkM_29wA-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+
+  header::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    opacity: 0.7;
+  }
+
+  header .container .row {
+    position: relative;
+    z-index: 3;
+    min-height:50vh;
+    padding:50px 50px;
+    display: flex;
+    /* align-items:center; */
+  }
+
+  .header-left {
+    height: inherit;
+    width: 50%;
+    display: flex;
+    gap:0px;
+    align-items: center;
+  }
+
+  .header-left .ri-arrow-left-s-line {
+    color: #ffffff70;
+    font-size:40px;
+    transition: all 0.4s;
+    cursor: pointer;
+  }
+
+  .header-left .ri-arrow-left-s-line:hover {
+    color: #ffffff;
+  }
+
+  .header-left .header-left-text p {
+    font-size:15px;
+    color: #ffffff;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+  .header-left .header-left-text .title {
+    font-size:40px;
+    color: #ffffff;
+    margin-bottom: 30px;
+  }
+
+  .header-btn {
+    height:45px;
+    width:150px;
+    font-size:12px;
+    color: #ffffff;
+    background-color: #c80011;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.4s;
+    cursor: pointer;
+  }
+
+  .header-btn:hover {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+  }
+
+  .header-right {
+    height: inherit;
+    width: 50%;
+    display: flex;
+    gap:0px;
+    align-items: center;
+  }
+
+  .header-right .header-right-img {
+    height:300px;
+    width:100%;
+    background-image: url("./Image/vadym-kudriavtsev-eH6UM3_WCy0-unsplash-removebg-preview\(1\).png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .header-right .header-right-icon .ri-arrow-right-s-line {
+    font-size:40px;
+    color: #ffffff93;
+    cursor: pointer;
+    transition: all 0.4s;
+  }
+  .header-right .header-right-icon .ri-arrow-right-s-line:hover {
+    color: #ffffff;
+  }
+
+  /*========== Main section ========*/
+
+  /*--------- Service section ----------*/
+
+  .service .container .row {
+    min-height:40vh;
+    padding: 100px 100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap:50px;
+    align-items: center;
+  }
+
+  .service-items {
+    width:45%;
+    display: flex;
+    gap: 10px;
+  }
+
+  .service-items .service-item-icon .fa-solid {
+    font-size: 50px;
+    color: #c80011;
+  }
+
+  .service-items .title {
+    font-size: 20px;
+    color: black;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  .service-items p {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.475);
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+
+  .service-items .read-more {
+    font-size: 16px;
+    color: #1a2980a8;
+    font-weight: 400;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.4s;
+  }
+
+  .service-items .read-more:hover {
+    color: #0000009c;
+  }
+
+  .service-item2 {
+    background-color: rgba(128, 128, 128, 0.181);
+    height: 200px;
+    padding: 50px 20px;
+  }
+
+  /*--------- About Section ----------*/
+
+  .about .container .row {
+    min-height: 60vh;
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+  }
+
+  .about-left {
+    width:100%;
+    height:500px;
+    background-image: url("./Image/lucas-clarysse-XUo09J8yuN0-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .about-right {
+    height: inherit;
+    width:100%;
+  }
+
+  .about-right p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #c80011;
+    margin-bottom: 10px;
+  }
+
+  .about-right .title {
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  .about-right .title span {
+    color: #c80011;
+  }
+
+  .para {
+    font-size: 18px;
+    color: #00000084;
+    line-height: 25px;
+    margin-bottom: 10px;
+  }
+
+  .about-right-items {
+    display: flex;
+    gap: 10px;
+  }
+
+  .about-right-items .number {
+    height: 60px;
+    width: 60px;
+    background-color: rgba(128, 128, 128, 0.287);
+    color: #0b2447;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+  }
+
+  .about-right-items .title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .about-right .para {
+    font-size: 16px;
+    color: #00000082;
+    margin-bottom: 20px;
+  }
+
+  .about-right-item3 {
+    margin-bottom: 20px;
+  }
+
+  .about-right .about-right-btn {
+    height: 50px;
+    width: 200px;
+    color: #ffffff;
+    background-color: #c80011;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.4s;
+    cursor: pointer;
+  }
+
+  .about-right .about-right-btn:hover {
+    color: #c80011;
+    background-color: transparent;
+    border: 2px solid #e43636;
+  }
+
+  /*------- Review Section -------*/
+
+  .review {
+    min-height: 30vh;
+    background-image: url("./Image/thibault-lam-tran-3XGX36N2T6w-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+
+  .review::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000000;
+    opacity: 0.7;
+  }
+
+  .review .container .row {
+    padding: 50px 100px;
+    min-height: 30vh;
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+  }
+
+  .review-items {
+    width:46% ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .review-items .fa-solid {
+    font-size: 30px;
+    color: #ffffff;
+  }
+
+  .review-items .number {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  .review-items p {
+    font-size: 18px;
+    color: #ffffffc0;
+    font-weight: 500;
+  }
+
+  /*-------- Our Servicing Section --------*/
+
+  .our-service .container .row {
+    min-height: 80vh;
+    padding:100px 50px;
+  }
+
+  .our-para {
+    color: #c80011;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .our-title {
+    font-size:35px;
+    font-weight: 600;
+    color: #0b2447;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .our-service-item-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap:50px;
+  }
+
+  .our-service-item-container .our-service-left,
+  .our-service-middle,
+  .our-service-right {
+    width:46%;
+  }
+
+  .our-service-item-container .our-service-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .our-service-item-container .our-service-left-items {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 20px;
+    background-color: #eeefe0;
+  }
+
+  .our-service-item-container .our-service-left-item1 {
+    background-color: #c80011;
+  }
+
+  .our-service-item-container .our-service-left .our-service-left-item1 p {
+    color: #ffffff;
+  }
+
+  .our-service-item-container
+    .our-service-left
+    .our-service-left-item1
+    .fa-solid {
+    color: #ffffff;
+  }
+
+  .our-service-left .our-service-left-items p {
+    font-size:18px;
+    font-weight: 600;
+    color: #0b2447;
+  }
+
+  .our-service-left .our-service-left-items .fa-solid {
+    font-size:25px;
+    color: #c80011;
+  }
+
+  .our-service-middle {
+    background-image: url("./Image/sten-rademaker-UZUzvJEvKnI-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .our-service-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .our-service-right h1 {
+    color: #0b2447;
+  }
+
+  .our-service-right p {
+    font-size: 14px;
+    line-height: 20px;
+    color: #0b244795;
+  }
+
+  .our-service-right .our-service-right-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .our-service-item-container .our-service-right-items {
+    font-size: 14px;
+    color: #0b2447b0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .our-service-item-container .our-service-right-items .fa-solid {
+    font-size: 12px;
+    color: #78c841;
+  }
+
+  .our-service-right-btn {
+    height:50px;
+    width:150px;
+    font-size: 12px;
+    color: #ffffff;
+    background-color: #c80011;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  .our-service-right-btn:hover {
+    background-color: transparent;
+    color: #c80011;
+    border: 2px solid #c80011;
+  }
+
+  
+
+
+  /*------- Book a service section --------*/
+  .book-service {
+    min-height:40vh;
+    background-image: url("./Image/emile-guillemot-ci7gkM_29wA-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+
+  .book-service::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000000;
+    opacity: 0.7;
+  }
+
+  .book-service .container .row {
+    min-height:40vh;
+    position: relative;
+    z-index: 3;
+    padding: 0 50px;
+    display: flex;
+    gap: 30px;
+  }
+
+  .book-service-left {
+    height: inherit;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .book-service-left h1 {
+    font-size:30px;
+    font-weight: 700;
+    color: #ffffff;
+  }
+
+  .book-service-left p {
+    font-size:14px;
+    color: #ffffffd7;
+    line-height:25px;
+  }
+
+  .book-service-right {
+    height: inherit;
+    width: 50%;
+    background-color: #c80011;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:30px 30px;
+  }
+
+  .book-service-right h1 {
+    font-size:25px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom:20px;
+  }
+
+  .book-right-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5,40px);
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .book-grid-item1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .book-grid-item2 {
+    grid-row-start:2;
+    grid-row-end:3;
+    grid-column-start:1;
+    grid-column-end:2;
+  }
+
+  .book-grid-item3 {
+    grid-row-start:3;
+    grid-row-end:4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .book-grid-item4 {
+    grid-row-start:4;
+    grid-row-end:5;
+    grid-column-start:1;
+    grid-column-end:2;
+  }
+
+  .book-grid-item5 {
+    grid-row-start:5;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end:2;
+  }
+
+  .book-grid-items input,
+  select,
+  textarea {
+    width: 100%;
+    height: 100%;
+    padding: 10px 10px;
+    font-size: 14px;
+  }
+
+  .book-now {
+    background-color: #122758;
+    color: #ffffff;
+    width: 100%;
+    height: 40px;
+    border: none;
+    font-size:12px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  .book-now:hover {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+  }
+
+  /*-------- Our expert technican -------*/
+
+  .technician .container .row {
+    min-height: 70vh;
+    padding: 50px 50px;
+  }
+
+  .technician-para {
+    font-size:14px;
+    font-weight: 600;
+    color: #c80011;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .technician-title {
+    font-size:32px;
+    font-weight: 800;
+    color: #112854;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .technician-item-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .technician-items {
+    width:46%;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  .technician-items:hover {
+    transform: scale(1.03);
+  }
+
+  .technician-items .upper {
+    width: 100%;
+    height: 400px;
+  }
+
+  .technician-item1 .upper {
+    background-image: url("./Image/graham-mansfield-7jCYw6a2Wao-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+
+  .technician-item2 .upper {
+    background-image: url("./Image/abdullah-ali-1w9I6H4aftw-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+
+  .technician-item3 .upper {
+    background-image: url("./Image/pablo-soriano-Hnp-cs9QVOc-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+
+  .technician-item4 .upper {
+    background-image: url("./Image/dwayne-joe-eX_xrPwRkBc-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+
+  .technician-items .lower {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #f2f2f2;
+  }
+
+  .technician-items .name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #112854;
+  }
+
+  .technician-items .designation {
+    font-size: 14px;
+    font-weight: 400;
+    color: #1128549a;
+  }
+
+  /*------- Testimonial section --------*/
+
+  .testimonial .container .row {
+    min-height: 70vh;
+    padding: 50px 50px;
+  }
+
+  .testimonial-para {
+    text-align: center;
+    font-size:15px;
+    font-weight: 600;
+    color: #c80011;
+    margin-bottom: 30px;
+  }
+
+  .testimonial-title {
+    text-align: center;
+    font-size:32px;
+    font-weight: 600;
+    color: #112854;
+    margin-bottom: 30px;
+  }
+
+  .testimonial-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap:30px;
+  }
+
+  .testimonial-items {
+    width:47%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .testimonial-items .face {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 10px solid #f2f2f2;
+  }
+
+  .testimonial-items .face img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  .testimonial-items .detail .name {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #112854;
+    margin-bottom: 5px;
+  }
+
+  .testimonial-items .detail .designation {
+    text-align: center;
+    font-size:13px;
+    font-weight: 400;
+    color: #112854a3;
+  }
+
+  .testimonial-items .text {
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  .testimonial-items .text p {
+    font-size:13px;
+    line-height: 20px;
+    color: #000000a0;
+    text-align: center;
+  }
+
+  .testimonial-item2 .text {
+    background-color: #c80011;
+  }
+
+  .testimonial-item2 .text p {
+    color: #ffffff;
+  }
+
+  /*--------- Footer section --------*/
+
+  /* Footer heigher */
+  footer {
+    min-height: 40vh;
+    background-image: url("./Image/emile-guillemot-ci7gkM_29wA-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+
+  footer::before {
+    position: absolute;
+    z-index: 2;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    opacity:;
+  }
+
+  footer .container .row {
+    min-height: 40vh;
+    position: relative;
+    z-index: 3;
+    padding: 20px 70px;
+  }
+
+  .footer-upper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap:30px;
+    padding: 50px 0;
+    border-bottom: 2px solid #ffffff29;
+  }
+
+  .footer-upper .footer-items {
+    width:47%;
+  }
+
+  .footer-upper .footer-items .footer-header {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+  .footer-upper .footer-items p {
+    color: #ffffffc9;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .footer-item1 p {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .footer-item1 .social {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .footer-item2 p {
+    margin-bottom: 50px;
+  }
+
+  .footer-item1 .social .fa-brands {
+    font-size: 30px;
+    color: #ffffffa2;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+
+  .footer-upper .social .fa-brands:hover {
+    color: #ffffff;
+  }
+
+  .footer-item4 .search {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-item4 .search input {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    z-index: 1;
+    padding-left: 10px;
+  }
+
+  .footer-item4 .search input:focus {
+    outline: none;
+  }
+
+  .footer-item4 p {
+    margin-bottom: 10px;
+  }
+
+  .footer-item4 .search .sign-up {
+    position: absolute;
+    z-index: 2;
+    height: 40px;
+    width: 90px;
+    background-color: #c80011;
+    color: #ffffff;
+    border: none;
+    font-size: 14px;
+    right: 5px;
+    transition: all 0.4s;
+    cursor: pointer;
+  }
+
+  .footer-item4 .search .sign-up:hover {
+    background-color: transparent;
+    border: 2px solid #c80011;
+    color: #c80011;
+    font-weight: 500;
+  }
+
+  /* Footer lower */
+
+  .footer-lower {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  .footer-lower p {
+    color: #ffffff80;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  .footer-lower p:hover {
+    color: #ffffff;
+  }
+
+  .footer-lower .footer-lower-nav {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .footer-lower .footer-lower-nav p {
+    color: #ffffff94;
+    font-size: 14px;
+    padding-right: 20px;
+    border-right: 1px solid #ffffff89;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  .footer-lower .footer-lower-nav p:hover {
+    color: #ffffff;
+  }
+
+  .footer-lower .footer-lower-nav #faqs {
+    border-right: none;
+    padding-right: 0;
+  }
+}
+
+
+
+
+
+
+/*--------- For small screen ---------*/
+
+@media (max-width: 650px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  body {
+    font-family: "Roboto", sans-serif;
+  }
+
+  /*---------- Navbar section -----------*/
+
+  nav .container .row {
+    min-height:11vh;
+  }
+
+  /* Navbar upper */
+
+  .nav-upper {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    background-color: #7a7a733d;
+  }
+
+  .nav-upper-left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+  }
+
+  .nav-upper-left .address {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: rgba(0, 0, 0, 0.537);
+  }
+
+  .address .fa-solid {
+    color: #c80011;
+  }
+
+  .nav-upper-left .time {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: rgba(0, 0, 0, 0.538);
+  }
+
+  .time .fa-solid {
+    color: #c80011;
+  }
+
+  .nav-upper-right {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 10px;
+  }
+
+  .nav-upper-right .phone {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.547);
+  }
+
+  .nav-upper-right .phone .fa-phone {
+    color: #c80011;
+  }
+
+  .nav-icon {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .nav-icon .fa-brands {
+    font-size: 20px;
+    color: #c80011;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  .nav-icon .fa-brands:hover {
+    color: #c80011af;
+  }
+
+  /* Navbar lower */
+
+  .nav-lower {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #c80011;
+    margin-left: 20px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .hamburgur-menu {
+    margin-right: 20px;
+    display: block;
+  }
+
+  .hamburgur-menu .ri-menu-3-line {
+    font-size: 22px;
+    color: #c80011;
+  }
+
+  /*--------- Header section --------*/
+  header {
+    min-height: 86vh;
+    background-image: url("./Image/emile-guillemot-ci7gkM_29wA-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+
+  header::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    opacity: 0.7;
+  }
+
+  header .container .row {
+    position: relative;
+    z-index: 3;
+    min-height: 86vh;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    /* align-items:center; */
+  }
+
+  .header-left {
+    height: inherit;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .header-left .ri-arrow-left-s-line {
+    display: none;
+    color: #ffffff70;
+    font-size: 70px;
+    transition: all 0.4s;
+    cursor: pointer;
+  }
+
+  .header-left .ri-arrow-left-s-line:hover {
+    color: #ffffff;
+  }
+
+  .header-left .header-left-text p {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+  .header-left .header-left-text .title {
+    font-size: 40px;
+    color: #ffffff;
+    margin-bottom: 30px;
+  }
+
+  .header-btn {
+    height: 50px;
+    width: 150px;
+    font-size: 12px;
+    color: #ffffff;
+    background-color: #c80011;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.4s;
+    cursor: pointer;
+  }
+
+  .header-btn:hover {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+  }
+
+  .header-right {
+    height: inherit;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .header-right .header-right-img {
+    height: 300px;
+    width: 100%;
+    background-image: url("./Image/vadym-kudriavtsev-eH6UM3_WCy0-unsplash-removebg-preview\(1\).png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .header-right .header-right-icon .ri-arrow-right-s-line {
+    display: none;
+    font-size: 70px;
+    color: #ffffff93;
+    cursor: pointer;
+    transition: all 0.4s;
+  }
+  .header-right .header-right-icon .ri-arrow-right-s-line:hover {
+    color: #ffffff;
+  }
+
+  /*========== Main section ========*/
+
+  /*--------- Service section ----------*/
+
+  .service .container .row {
+    min-height:50vh;
+    padding:50px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+  }
+
+  .service-items {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+  }
+
+  .service-items .service-item-icon .fa-solid {
+    font-size: 50px;
+    color: #c80011;
+  }
+
+  .service-items .title {
+    font-size: 20px;
+    color: black;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  .service-items p {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.475);
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+
+  .service-items .read-more {
+    font-size: 16px;
+    color: #1a2980a8;
+    font-weight: 400;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.4s;
+  }
+
+  .service-items .read-more:hover {
+    color: #0000009c;
+  }
+
+  .service-item2 {
+    background-color: rgba(128, 128, 128, 0.181);
+    height: 200px;
+    padding: 50px 20px;
+  }
+
+  /*--------- About Section ----------*/
+
+  .about .container .row {
+    min-height: 60vh;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .about-left {
+    width: 100%;
+    height: 400px;
+    background-image: url("./Image/lucas-clarysse-XUo09J8yuN0-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .about-right {
+    height: inherit;
+    width: 100%;
+  }
+
+  .about-right p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #c80011;
+    margin-bottom: 20px;
+  }
+
+  .about-right .title {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  .about-right .title span {
+    color: #c80011;
+  }
+
+  .para {
+    font-size: 15px;
+    color: #00000084;
+    line-height: 25px;
+    margin-bottom: 20px;
+  }
+
+  .about-right-items {
+    display: flex;
+    gap: 10px;
+  }
+
+  .about-right-items .number {
+    height: 50px;
+    width: 50px;
+    background-color: rgba(128, 128, 128, 0.287);
+    color: #0b2447;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+  }
+
+  .about-right-items .title {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  .about-right .para {
+    font-size: 14px;
+    color: #00000082;
+    margin-bottom: 20px;
+  }
+
+  .about-right-item3 {
+    margin-bottom: 20px;
+  }
+
+  .about-right .about-right-btn {
+    height: 50px;
+    width: 150px;
+    color: #ffffff;
+    background-color: #c80011;
+    font-size: 12px;
+    font-weight: 500;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.4s;
+    cursor: pointer;
+  }
+
+  .about-right .about-right-btn:hover {
+    color: #c80011;
+    background-color: transparent;
+    border: 2px solid #e43636;
+  }
+
+  /*------- Review Section -------*/
+
+  .review {
+    min-height: 30vh;
+    background-image: url("./Image/thibault-lam-tran-3XGX36N2T6w-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+
+  .review::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000000;
+    opacity: 0.7;
+  }
+
+  .review .container .row {
+    padding: 50px 30px;
+    min-height: 30vh;
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content:center;
+    align-items: center;
+    gap:20px;
+  }
+
+  .review-items {
+    width:47% ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .review-items .fa-solid {
+    font-size: 30px;
+    color: #ffffff;
+  }
+
+  .review-items .number {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  .review-items p {
+    font-size: 18px;
+    color: #ffffffc0;
+    font-weight: 500;
+  }
+
+  /*-------- Our Servicing Section --------*/
+
+  .our-service .container .row {
+    min-height: 80vh;
+    padding: 50px 20px;
+  }
+
+  .our-para {
+    color: #c80011;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .our-title {
+    font-size: 30px;
+    font-weight: 600;
+    color: #0b2447;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .our-service-item-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .our-service-item-container .our-service-left,
+  .our-service-middle,
+  .our-service-right {
+    width: 100%;
+  }
+
+  .our-service-item-container .our-service-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .our-service-item-container .our-service-left-items {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 20px;
+    background-color: #eeefe0;
+  }
+
+  .our-service-item-container .our-service-left-item1 {
+    background-color: #c80011;
+  }
+
+  .our-service-item-container .our-service-left .our-service-left-item1 p {
+    color: #ffffff;
+  }
+
+  .our-service-item-container
+    .our-service-left
+    .our-service-left-item1
+    .fa-solid {
+    color: #ffffff;
+  }
+
+  .our-service-left .our-service-left-items p {
+    font-size: 20px;
+    font-weight: 600;
+    color: #0b2447;
+  }
+
+  .our-service-left .our-service-left-items .fa-solid {
+    font-size: 30px;
+    color: #c80011;
+  }
+
+  .our-service-middle {
+    height: 400px;
+    background-image: url("./Image/sten-rademaker-UZUzvJEvKnI-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .our-service-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .our-service-right h1 {
+    color: #0b2447;
+  }
+
+  .our-service-right p {
+    font-size: 15px;
+    line-height: 25px;
+    color: #0b244795;
+  }
+
+  .our-service-right .our-service-right-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .our-service-item-container .our-service-right-items {
+    font-size: 16px;
+    color: #0b2447b0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .our-service-item-container .our-service-right-items .fa-solid {
+    font-size: 14px;
+    color: #78c841;
+  }
+
+  .our-service-right-btn {
+    height: 50px;
+    width: 150px;
+    font-size: 12px;
+    color: #ffffff;
+    background-color: #c80011;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  .our-service-right-btn:hover {
+    background-color: transparent;
+    color: #c80011;
+    border: 2px solid #c80011;
+  }
+
+  /*------- Book a service section --------*/
+  .book-service {
+    min-height: 60vh;
+    background-image: url("./Image/emile-guillemot-ci7gkM_29wA-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+
+  .book-service::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000000;
+    opacity: 0.7;
+  }
+
+  .book-service .container .row {
+    min-height: 60vh;
+    position: relative;
+    z-index: 3;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .book-service-left {
+    height: inherit;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .book-service-left h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #ffffff;
+  }
+
+  .book-service-left p {
+    font-size: 16px;
+    color: #ffffffd7;
+    line-height: 25px;
+  }
+
+  .book-service-right {
+    height: inherit;
+    width: 100%;
+    background-color: #c80011;
+    padding: 50px 20px;
+  }
+
+  .book-service-right h1 {
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .book-right-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 60px);
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .book-grid-item1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .book-grid-item2 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .book-grid-item3 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .book-grid-item4 {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .book-grid-item5 {
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .book-grid-items input,
+  select,
+  textarea {
+    width: 100%;
+    height: 100%;
+    padding: 10px 10px;
+    font-size: 14px;
+  }
+
+  .book-now {
+    background-color: #122758;
+    color: #ffffff;
+    width: 100%;
+    height: 45px;
+    border: none;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  .book-now:hover {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+  }
+
+  /*-------- Our expert technican -------*/
+
+  .technician .container .row {
+    min-height: 70vh;
+    padding: 50px 20px;
+  }
+
+  .technician-para {
+    font-size: 14px;
+    font-weight: 600;
+    color: #c80011;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .technician-title {
+    font-size: 30px;
+    font-weight: 800;
+    color: #112854;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .technician-item-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .technician-items {
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  .technician-items:hover {
+    transform: scale(1.03);
+  }
+
+  .technician-items .upper {
+    width: 100%;
+    height: 400px;
+  }
+
+  .technician-item1 .upper {
+    background-image: url("./Image/graham-mansfield-7jCYw6a2Wao-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+
+  .technician-item2 .upper {
+    background-image: url("./Image/abdullah-ali-1w9I6H4aftw-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+
+  .technician-item3 .upper {
+    background-image: url("./Image/pablo-soriano-Hnp-cs9QVOc-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+
+  .technician-item4 .upper {
+    background-image: url("./Image/dwayne-joe-eX_xrPwRkBc-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+
+  .technician-items .lower {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #f2f2f2;
+  }
+
+  .technician-items .name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #112854;
+  }
+
+  .technician-items .designation {
+    font-size: 14px;
+    font-weight: 400;
+    color: #1128549a;
+  }
+
+  /*------- Testimonial section --------*/
+
+  .testimonial .container .row {
+    min-height: 70vh;
+    padding: 50px 20px;
+  }
+
+  .testimonial-para {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #c80011;
+    margin-bottom: 30px;
+  }
+
+  .testimonial-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    color: #112854;
+    margin-bottom: 30px;
+  }
+
+  .testimonial-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .testimonial-items {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .testimonial-items .face {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 10px solid #f2f2f2;
+  }
+
+  .testimonial-items .face img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  .testimonial-items .detail .name {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #112854;
+    margin-bottom: 5px;
+  }
+
+  .testimonial-items .detail .designation {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: #112854a3;
+  }
+
+  .testimonial-items .text {
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  .testimonial-items .text p {
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000a0;
+    text-align: center;
+  }
+
+  .testimonial-item2 .text {
+    background-color: #c80011;
+  }
+
+  .testimonial-item2 .text p {
+    color: #ffffff;
+  }
+
+  /*--------- Footer section --------*/
+
+  /* Footer heigher */
+  footer {
+    min-height: 40vh;
+    background-image: url("./Image/emile-guillemot-ci7gkM_29wA-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+
+  footer::before {
+    position: absolute;
+    z-index: 2;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    opacity: 0.8;
+  }
+
+  footer .container .row {
+    min-height: 40vh;
+    position: relative;
+    z-index: 3;
+    padding:0 20px;
+  }
+
+  .footer-upper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:50px 0;
+    gap: 30px;
+    border-bottom: 2px solid #ffffff29;
+  }
+
+  .footer-upper .footer-items {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-upper .footer-items .footer-header {
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+  .footer-upper .footer-items p {
+    color: #ffffffc9;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .footer-item1 p {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .footer-item1 .social {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .footer-item2 p {
+    margin-bottom: 50px;
+  }
+
+  .footer-item1 .social .fa-brands {
+    font-size: 25px;
+    color: #ffffffa2;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+
+  .footer-upper .social .fa-brands:hover {
+    color: #ffffff;
+  }
+
+  .footer-item4 .search {
+    width: 100%;
+    position: static;
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-item4 .search input {
+    width: 100%;
+    height: 50px;
+    position: static;
+    padding-left: 10px;
+  }
+
+  .footer-item4 .search input:focus {
+    outline: none;
+  }
+
+  .footer-item4 p {
+    margin-bottom: 14px;
+  }
+
+  .footer-item4 .search .sign-up {
+    position: static;
+    height: 40px;
+    width: 90px;
+    background-color: #c80011;
+    color: #ffffff;
+    border: none;
+    font-size: 14px;
+    margin-left: -100px;
+    transition: all 0.4s;
+    cursor: pointer;
+  }
+
+  .footer-item4 .search .sign-up:hover {
+    background-color: transparent;
+    border: 2px solid #c80011;
+    color: #c80011;
+    font-weight: 500;
+  }
+
+  /* Footer lower */
+
+  .footer-lower {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    gap: 20px;
+    padding: 20px 0;
+  }
+
+  .footer-lower p {
+    color: #ffffff80;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  .footer-lower p:hover {
+    color: #ffffff;
+  }
+
+  .footer-lower .footer-lower-nav {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .footer-lower .footer-lower-nav p {
+    color: #ffffff94;
+    font-size: 14px;
+    padding-right: 20px;
+    border-right: 1px solid #ffffff89;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  .footer-lower .footer-lower-nav p:hover {
+    color: #ffffff;
+  }
+
+  .footer-lower .footer-lower-nav #faqs {
+    border-right: none;
+    padding-right: 0;
+  }
+}

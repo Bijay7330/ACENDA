@@ -1,0 +1,2006 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/*------ Header Section -------*/
+header {
+  min-height: 100vh;
+  padding: 10px 0;
+  background-image: url(./Image/Header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  position: relative;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #083877;
+  opacity: 0.4;
+  z-index: 1;
+}
+
+/*-------- navbar section -------*/
+nav .container .row {
+  background-color: #ffffff89;
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 50px;
+  position: relative;
+  width: 85%;
+  z-index: 2;
+}
+
+.nav-logo img {
+  width: 100px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links ul li {
+  list-style-type: none;
+}
+
+ul li a {
+  text-decoration: none;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.834);
+  cursor: pointer;
+  transition:all 0.3s ;
+}
+
+ul li a:hover{
+  color:#004aad;
+  font-weight:500 ;
+}
+
+a .fa-solid {
+  color: rgba(0, 0, 0, 0.808);
+}
+
+.home {
+  color: #004aad;
+  transition:all 0.3s ;
+  cursor: pointer;
+}
+
+.home:hover{
+  color:#222222 ;
+}
+
+.nav-btn {
+  height: 50px;
+  width: 180px;
+  font-size: 10px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  background-color: #004aad;
+  border: none;
+  border-radius: 30px;
+  text-align: center;
+  align-content: center;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.nav-btn:hover {
+  background-color: transparent;
+  color: #004aad;
+  border: 2px solid #004aad;
+}
+
+.hamburger {
+  display: none;
+}
+
+.hamburger .fa-solid {
+  font-size: 25px;
+  color: #004aad;
+}
+
+/*-------- Main header container ---------*/
+
+.header-container .container .row {
+  min-height: 88vh;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  position:relative;
+  z-index:2;
+}
+
+.header-para-1 {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 5px;
+  animation: Slider 3s ease-in-out 1s infinite;
+}
+
+.header-title {
+  font-size: 60px;
+  color: #ffffff;
+  font-weight: 200;
+  line-height: 70px;
+  width: 40%;
+  animation: Slider 3s ease-in-out 1s infinite;
+}
+
+.header-title span {
+  font-weight: 500;
+}
+
+.header-para-2 {
+  font-size: 11px;
+  color: #ffffff;
+  border-left: 2px solid white;
+  width: 35%;
+  padding-left: 20px;
+  animation: Slider 3s ease-in-out 1s infinite;
+}
+
+.header-btn {
+  height: 50px;
+  width: 230px;
+  background-color: #004aad;
+  color: #ffffff;
+  border: none;
+  border-radius: 30px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  transition: all 0.4s;
+  cursor: pointer;
+  animation: Slider 3s ease-in-out 1s infinite;
+}
+
+.header-btn:hover {
+  background-color: transparent;
+  color: #004aad;
+  border: 2px solid #004aad;
+}
+
+@keyframes Slider {
+  0% {
+    margin-left: 0px;
+    opacity: 0;
+  }
+  100% {
+    margin-left: 120px;
+    opacity: 1;
+  }
+}
+
+.header-number {
+  color: #ffffff;
+  background-color: #004aad;
+  font-size: 16px;
+  height: 40px;
+  width: 150px;
+  text-align: center;
+  align-content: center;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: rotate(-90deg);
+  z-index: 3;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-left: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
+  border-top: 2px solid #ffffff;
+}
+
+/*========= Main section ==========*/
+
+/*------- Oral applience section -------*/
+
+.oral-applience {
+  min-height: 100vh;
+  background-image: url("./Image/Oral\ Applience.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.oral-applience::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffffd0;
+  z-index: 1;
+}
+
+.oral-applience .container .row {
+  min-height: 100vh;
+  position: relative;
+  z-index: 2;
+  display: flex;
+}
+
+.oral-applience-left {
+  width: 50%;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  padding: 0 100px;
+}
+
+.oral-applience-left #img1 {
+  background-image: url("./Image/Oral\ heading\ 2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #004aad;
+  height: 500px;
+  width: 100%;
+  border-radius: 50%;
+  padding: 20px;
+  position: relative;
+}
+
+.oral-applience #img2 {
+  position: absolute;
+  background-image: url("./Image/Oral\ heading\ 1.png");
+  background-size: cover;
+  z-index: 3;
+  height: 250px;
+  width: 250px;
+  bottom: 70px;
+  left: 350px;
+  border-radius: 50%;
+  border: 10px solid #ffffff;
+}
+
+.oral-applience-right {
+  width: 50%;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.oral-right-para1 {
+  font-size: 16px;
+  color: #004aad;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.oral-right-title {
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.oral-right-title span {
+  font-style: italic;
+  font-weight: 600;
+  font-family: "Playfair Display", serif;
+}
+
+.oral-right-para2 {
+  width: 80%;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.522);
+}
+
+.oral-right-para3 {
+  width: 80%;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.425);
+}
+
+.oral-right-button {
+  height: 40px;
+  width: 140px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  background-color: #004aad;
+  font-weight: 600;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.4s;
+  box-shadow: 5px 5px 10px #004bad80;
+}
+
+.oral-right-button:hover {
+  font-weight: 600;
+  background-color: transparent;
+  color: #004bad;
+  border: 2px solid #004bad;
+  box-shadow: 0px 0px 20px #004badbc;
+}
+
+/*--------- Oral applience section for snoring ---------*/
+
+.snoring .container .row {
+  min-height: 100vh;
+  display: flex;
+}
+
+.snoring-left {
+  padding: 50px;
+  width: 50%;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+
+.snoring-para1 {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #004aad;
+}
+
+.snoring-title {
+  font-size: 35px;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+
+.snoring-title span {
+  font-weight: 600;
+  font-style: italic;
+  font-family: "Playfair Display", serif;
+}
+
+.snoring-para2 {
+  font-size: 12px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.49);
+}
+
+.snoring-btn {
+  height: 40px;
+  width: 130px;
+  background-color: #004aad;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 500;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px #004bad62;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.snoring-btn:hover {
+  font-weight: 600;
+  background-color: transparent;
+  color: #004bad;
+  border: 2px solid #004bad;
+  box-shadow: 0px 0px 20px #004badbc;
+}
+
+.snoring-right {
+  width: 50%;
+  padding: 100px 100px;
+  height: inherit;
+}
+
+.snoring-right .right-img {
+  width: 100%;
+  height: 100%;
+  background-image: url("./Image/Couple.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+
+/*--------- Our Process Section ---------*/
+.our-process {
+  min-height: 60vh;
+  background-image: url("./Image/Oral\ Applience.png");
+  background-size: cover;
+  position: relative;
+}
+
+.our-process::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #edf5ff;
+  opacity: 0.7;
+}
+
+.our-process .container .row {
+  position: relative;
+  z-index: 3;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.process-para {
+  font-size: 12px;
+  color: #004aad;
+  letter-spacing: 1px;
+}
+
+.process-title {
+  font-size: 35px;
+  font-weight: 200;
+}
+
+.process-title span {
+  font-weight: 600;
+  font-style: italic;
+  font-family: "Playfair Display", serif;
+}
+
+.process-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.process-items {
+  padding: 0 20px 10px 20px;
+  height: 200px;
+  width: 330px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  border-top: 5px solid #004aad;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.process-items:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.205);
+}
+
+.process-item-no {
+  background-color: #004aad;
+  color: #ffffff;
+  height: 70px;
+  width: 70px;
+  font-size: 35px;
+  text-align: center;
+  align-content: center;
+  border-radius: 0 0 35px 35px;
+}
+
+.process-item-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: black;
+}
+
+.process-item-para {
+  font-size: 9px;
+  color: rgba(0, 0, 0, 0.35);
+  text-align: center;
+}
+
+/*-------- Booking Section -------*/
+
+.booking {
+  min-height: 50vh;
+  background-image: url("./Image/Oral\ Applience.png");
+  background-size: cover;
+  position: relative;
+}
+
+.booking::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #004aad;
+  opacity: 0.9;
+  z-index: 2;
+}
+
+.booking .container .row {
+  position: relative;
+  z-index: 3;
+  min-height: 50vh;
+  display: flex;
+  gap: 50px;
+  overflow-y: hidden;
+}
+
+.booking-left {
+  height: inherit;
+  width: 50%;
+  padding: 10px 100px 0 100px;
+}
+
+.booking-img {
+  width: 100%;
+  height: 500px;
+  background-image: url("./Image/Booking\ Section.png");
+  background-size: cover;
+  background-position: top;
+  border-radius: 50%;
+  position: relative;
+  bottom: -70px;
+}
+
+.booking-right {
+  height: inherit;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+
+.booking-para {
+  font-size: 12px;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+.booking-title {
+  font-size: 35px;
+  font-weight: 200;
+  color: #ffffff;
+  line-height: 45px;
+}
+
+.booking-title span {
+  font-style: italic;
+  font-weight: 550;
+  font-family: "Playfair Display", serif;
+}
+
+.booking-btn {
+  height: 40px;
+  width: 240px;
+  color: #004aad;
+  background-color: #ffffff;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 20px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.booking-btn:hover {
+  color: #ffffff;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+}
+
+/*--------- Footer Section ---------*/
+
+footer .container .row {
+  min-height: 40vh;
+  padding: 20px 100px;
+}
+
+.footer-upper-items {
+  height: 180px;
+}
+
+.footer-upper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.229);
+  padding-bottom: 20px;
+}
+
+.footer-upper-item1 {
+  width: 250px;
+}
+.footer-upper-item1 .footer-header {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.footer-upper-item1 p {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.footer-upper-item2 .footer-logo img {
+  width: 200px;
+  margin-bottom: 35px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-links .fa-brands {
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+}
+
+.footer-upper-item3 .footer-header {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.upper-items p {
+  font-size: 11px;
+  margin-bottom: 12px;
+}
+
+.footer-lower {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.footer-lower-para1 {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.749);
+}
+
+.footer-lower-para2 {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.749);
+}
+
+/*============ Responsive Section ===========*/
+
+/*-------- For medium section --------*/
+
+@media (max-width: 1024px) {
+  /*------ Header Section -------*/
+  header {
+    min-height: 80vh;
+    padding: 10px 0;
+    background-image: url(./Image/Header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    position: relative;
+  }
+
+  header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #083877;
+    opacity: 0.4;
+    z-index: 1;
+  }
+
+  /*-------- navbar section -------*/
+  nav .container .row {
+    background-color: #ffffff89;
+    margin: auto;
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 50px;
+    position: relative;
+    width: 85%;
+    z-index: 2;
+  }
+
+  .nav-logo img {
+    width: 100px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger .fa-solid {
+    font-size: 25px;
+    color: #004aad;
+  }
+
+  /*-------- Main header container ---------*/
+
+  .header-container .container .row {
+    min-height: 60vh;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .header-para-1 {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    animation: Slider 3s ease-in-out 1s infinite;
+  }
+
+  .header-title {
+    font-size: 40px;
+    color: #ffffff;
+    font-weight: 200;
+    line-height: 50px;
+    width: 100%;
+    animation: Slider 3s ease-in-out 1s infinite;
+  }
+
+  .header-title span {
+    font-weight: 500;
+  }
+
+  .header-para-2 {
+    font-size: 11px;
+    color: #ffffff;
+    border-left: 2px solid white;
+    width: 35%;
+    padding-left: 20px;
+    animation: Slider 3s ease-in-out 1s infinite;
+  }
+
+  .header-btn {
+    height: 50px;
+    width: 230px;
+    background-color: #004aad;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    transition: all 0.4s;
+    cursor: pointer;
+    animation: Slider 3s ease-in-out 1s infinite;
+  }
+
+  .header-btn:hover {
+    background-color: transparent;
+    color: #004aad;
+    border: 2px solid #004aad;
+  }
+
+  @keyframes Slider {
+    0% {
+      margin-left: 0px;
+      opacity: 0;
+    }
+    100% {
+      margin-left: 90px;
+      opacity: 1;
+    }
+  }
+
+  .header-number {
+    color: #ffffff;
+    background-color: #004aad;
+    font-size: 16px;
+    height: 40px;
+    width: 150px;
+    text-align: center;
+    align-content: center;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: rotate(-90deg);
+    z-index: 3;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    border-top: 2px solid #ffffff;
+  }
+
+  /*========= Main section ==========*/
+
+  /*------- Oral applience section -------*/
+
+  .oral-applience {
+    min-height: 60vh;
+    background-image: url("./Image/Oral\ Applience.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+
+  .oral-applience::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffffffd0;
+    z-index: 1;
+  }
+
+  .oral-applience .container .row {
+    min-height: 50vh;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .oral-applience-left {
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 150px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .oral-applience-left #img1 {
+    background-image: url("./Image/Oral\ heading\ 2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #004aad;
+    height: 530px;
+    width: 650px;
+    border-radius: 50%;
+    padding: 20px;
+  }
+
+  .oral-applience #img2 {
+    position: absolute;
+    background-image: url("./Image/Oral\ heading\ 1.png");
+    background-size: cover;
+    z-index: 3;
+    height: 250px;
+    width: 250px;
+    bottom: 0px;
+    left: 50%;
+    border-radius: 50%;
+    border: 10px solid #ffffff;
+  }
+
+  .oral-applience-right {
+    width: 100%;
+    padding: 50px;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .oral-right-para1 {
+    font-size: 16px;
+    color: #004aad;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+
+  .oral-right-title {
+    font-size: 40px;
+    font-weight: 300;
+  }
+
+  .oral-right-title span {
+    font-style: italic;
+    font-weight: 600;
+    font-family: "Playfair Display", serif;
+  }
+
+  .oral-right-para2 {
+    width: 100%;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.85);
+  }
+
+  .oral-right-para3 {
+    width: 100%;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.828);
+  }
+
+  .oral-right-button {
+    height: 40px;
+    width: 140px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    background-color: #004aad;
+    font-weight: 600;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.4s;
+    box-shadow: 5px 5px 10px #004bad80;
+  }
+
+  .oral-right-button:hover {
+    font-weight: 600;
+    background-color: transparent;
+    color: #004bad;
+    border: 2px solid #004bad;
+    box-shadow: 0px 0px 20px #004badbc;
+  }
+
+  /*-------Snoring----------*/
+  .snoring .container .row {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .snoring-left {
+    padding: 50px;
+    width: 100%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .snoring-para1 {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #004aad;
+  }
+
+  .snoring-title {
+    font-size: 35px;
+    font-weight: 200;
+    margin-bottom: 20px;
+  }
+
+  .snoring-title span {
+    font-weight: 600;
+    font-style: italic;
+    font-family: "Playfair Display", serif;
+  }
+
+  .snoring-para2 {
+    font-size: 12px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.49);
+  }
+
+  .snoring-btn {
+    height: 40px;
+    width: 130px;
+    background-color: #004aad;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 500;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px #004bad62;
+    cursor: pointer;
+    transition: all 0.4s;
+  }
+
+  .snoring-btn:hover {
+    font-weight: 600;
+    background-color: transparent;
+    color: #004bad;
+    border: 2px solid #004bad;
+    box-shadow: 0px 0px 20px #004badbc;
+  }
+
+  .snoring-right {
+    width: 100%;
+    padding: 50px 100px;
+    height: inherit;
+  }
+
+  .snoring-right .right-img {
+    width: 100%;
+    min-height: 500px;
+    background-image: url("./Image/Couple.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 0;
+  }
+
+  /*--------- Our Process Section ---------*/
+  .our-process {
+    min-height: 60vh;
+    background-image: url("./Image/Oral\ Applience.png");
+    background-size: cover;
+    position: relative;
+  }
+
+  .our-process::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #edf5ff;
+    opacity: 0.7;
+  }
+
+  .our-process .container .row {
+    position: relative;
+    z-index: 3;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+  }
+
+  .process-para {
+    font-size: 12px;
+    color: #004aad;
+    letter-spacing: 1px;
+  }
+
+  .process-title {
+    font-size: 35px;
+    font-weight: 200;
+  }
+
+  .process-title span {
+    font-weight: 600;
+    font-style: italic;
+    font-family: "Playfair Display", serif;
+  }
+
+  .process-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .process-items {
+    padding: 0 20px 10px 20px;
+    height: 200px;
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    border-top: 5px solid #004aad;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  .process-items:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.205);
+  }
+
+  .process-item-no {
+    background-color: #004aad;
+    color: #ffffff;
+    height: 70px;
+    width: 70px;
+    font-size: 35px;
+    text-align: center;
+    align-content: center;
+    border-radius: 0 0 35px 35px;
+  }
+
+  .process-item-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+  }
+
+  .process-item-para {
+    font-size: 9px;
+    color: rgba(0, 0, 0, 0.35);
+    text-align: center;
+  }
+
+  /*-------- Booking Section -------*/
+
+  .booking {
+    min-height: 60vh;
+    background-image: url("./Image/Oral\ Applience.png");
+    background-size: cover;
+    position: relative;
+  }
+
+  .booking::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #004aad;
+    opacity: 0.9;
+    z-index: 2;
+  }
+
+  .booking .container .row {
+    position: relative;
+    z-index: 3;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    overflow-y: hidden;
+  }
+
+  .booking-left {
+    height: inherit;
+    width: 100%;
+    padding: 10px 100px 0 100px;
+  }
+
+  .booking-img {
+    width: 100%;
+    height: 400px;
+    background-image: url("./Image/Booking\ Section.png");
+    background-size: cover;
+    background-position: top;
+    border-radius: 20px;
+    position: static;
+    bottom: 0;
+  }
+
+  .booking-right {
+    min-height: 20vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .booking-para {
+    font-size: 12px;
+    color: #ffffff;
+    letter-spacing: 1px;
+  }
+
+  .booking-title {
+    font-size: 30px;
+    font-weight: 200;
+    color: #ffffff;
+    line-height: 45px;
+  }
+
+  .booking-title span {
+    font-style: italic;
+    font-weight: 550;
+    font-family: "Playfair Display", serif;
+  }
+
+  .booking-btn {
+    height: 40px;
+    width: 240px;
+    color: #004aad;
+    background-color: #ffffff;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 20px;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+
+  .booking-btn:hover {
+    color: #ffffff;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+  }
+
+  /*--------- Footer Section ---------*/
+
+  footer .container .row {
+    min-height:30vh;
+    padding:50px 100px;
+  }
+
+  .footer-upper-items {
+    height:200px;
+    width:200px;
+  }
+
+  .footer-upper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.229);
+    padding-bottom: 20px;
+  }
+
+  .footer-upper-item1 {
+    width: 250px;
+  }
+  .footer-upper-item1 .footer-header {
+    font-size:13px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+  .footer-upper-item1 p {
+    font-size:11px;
+    margin-bottom: 10px;
+  }
+
+  .footer-upper-item2 .footer-logo img {
+    width:150px;
+    margin-bottom: 35px;
+  }
+
+  .footer-links {
+    display: flex;
+    justify-content:space-around;
+    gap:10px;
+  }
+
+  .footer-links .fa-brands {
+    font-size:25px;
+    color: rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+  }
+
+  .footer-upper-item3 .footer-header {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+  .upper-items p {
+    font-size:11px;
+    margin-bottom: 12px;
+  }
+
+  .footer-lower {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  .footer-lower-para1 {
+    font-size:10px;
+    color: rgba(0, 0, 0, 0.749);
+  }
+
+  .footer-lower-para2 {
+    font-size:10px;
+    color: rgba(0, 0, 0, 0.749);
+  }
+}
+
+/*-------- For small section --------*/
+
+@media (max-width: 650px) {
+  /*------ Header Section -------*/
+  header {
+    min-height:80vh;
+    padding: 10px 0;
+    background-image: url(./Image/Header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    position: relative;
+  }
+
+  header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #083877;
+    opacity: 0.4;
+    z-index: 1;
+  }
+
+  /*-------- navbar section -------*/
+  nav .container .row {
+    background-color: #ffffff89;
+    margin: auto;
+    padding:10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 50px;
+    position: relative;
+    width:95%;
+    z-index: 2;
+  }
+
+  .nav-logo img {
+    width: 70px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger .fa-solid {
+    font-size:18px;
+    color: #004aad;
+  }
+
+  /*-------- Main header container ---------*/
+
+  .header-container .container .row {
+    min-height:70vh;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:20px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .header-para-1 {
+    color: #ffffff;
+    font-size:12px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    animation: Slider 3s ease-in-out 1s infinite;
+  }
+
+  .header-title {
+    font-size:26px;
+    color: #ffffff;
+    font-weight: 200;
+    line-height:40px;
+    width: 100%;
+    animation: Slider 3s ease-in-out 1s infinite;
+  }
+
+  .header-title span {
+    font-weight: 500;
+  }
+
+  .header-para-2 {
+    font-size:9px;
+    color: #ffffff;
+    border-left: 2px solid white;
+    width:80%;
+    padding-left:10px;
+    animation: Slider 3s ease-in-out 1s infinite;
+  }
+
+  .header-btn {
+    height:40px;
+    width:180px;
+    background-color: #004aad;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    font-size:10px;
+    letter-spacing:0;
+    font-weight: 400;
+    transition: all 0.4s;
+    cursor: pointer;
+    animation: Slider 3s ease-in-out 1s infinite;
+  }
+
+  .header-btn:hover {
+    background-color: transparent;
+    color: #004aad;
+    border: 2px solid #004aad;
+  }
+
+  @keyframes Slider {
+    0% {
+      margin-left: 0px;
+      opacity: 0;
+    }
+    100% {
+      margin-left:20px;
+      opacity: 1;
+    }
+  }
+
+  .header-number {
+    color: #ffffff;
+    background-color: #004aad;
+    font-size: 16px;
+    height: 40px;
+    width: 150px;
+    text-align: center;
+    align-content: center;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: rotate(-90deg);
+    z-index: 3;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    border-top: 2px solid #ffffff;
+  }
+
+  /*========= Main section ==========*/
+
+  /*------- Oral applience section -------*/
+
+  .oral-applience {
+    min-height: 60vh;
+    background-image: url("./Image/Oral\ Applience.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+
+  .oral-applience::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffffffd0;
+    z-index: 1;
+  }
+
+  .oral-applience .container .row {
+    min-height: 50vh;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .oral-applience-left {
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .oral-applience-left #img1 {
+    background-image: url("./Image/Oral\ heading\ 2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #004aad;
+    height:450px;
+    width:100%;
+    border-radius: 50%;
+    padding:20px;
+  }
+
+  .oral-applience #img2 {
+    position: absolute;
+    background-image: url("./Image/Oral\ heading\ 1.png");
+    background-size: cover;
+    z-index: 3;
+    height:200px;
+    width: 200px;
+    bottom: 0px;
+    left:30% ;
+    border-radius: 50%;
+    border:5px solid #ffffff;
+  }
+
+  .oral-applience-right {
+    width: 100%;
+    padding: 50px;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:20px;
+  }
+
+  .oral-right-para1 {
+    font-size:12px;
+    color: #004aad;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+
+  .oral-right-title {
+    font-size:25px;
+    font-weight: 300;
+  }
+
+  .oral-right-title span {
+    font-style: italic;
+    font-weight: 600;
+    font-family: "Playfair Display", serif;
+  }
+
+  .oral-right-para2 {
+    width: 100%;
+    font-size:14px;
+    line-height:25px ;
+    color: rgba(0, 0, 0, 0.85);
+  }
+
+  .oral-right-para3 {
+    width: 100%;
+    font-size:12px;
+    line-height:25px ;
+    color: rgba(0, 0, 0, 0.828);
+  }
+
+  .oral-right-button {
+    height: 40px;
+    width: 140px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    background-color: #004aad;
+    font-weight: 600;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.4s;
+    box-shadow: 5px 5px 10px #004bad80;
+  }
+
+  .oral-right-button:hover {
+    font-weight: 600;
+    background-color: transparent;
+    color: #004bad;
+    border: 2px solid #004bad;
+    box-shadow: 0px 0px 20px #004badbc;
+  }
+
+  /*-------Snoring----------*/
+  .snoring .container .row {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .snoring-left {
+    padding: 50px;
+    width: 100%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .snoring-para1 {
+    font-size:12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #004aad;
+  }
+
+  .snoring-title {
+    font-size:25px;
+    font-weight: 200;
+    margin-bottom: 20px;
+  }
+
+  .snoring-title span {
+    font-weight: 600;
+    font-style: italic;
+    font-family: "Playfair Display", serif;
+  }
+
+  .snoring-para2 {
+    font-size: 12px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.779);
+  }
+
+  .snoring-btn {
+    height: 40px;
+    width: 130px;
+    background-color: #004aad;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 500;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px #004bad62;
+    cursor: pointer;
+    transition: all 0.4s;
+  }
+
+  .snoring-btn:hover {
+    font-weight: 600;
+    background-color: transparent;
+    color: #004bad;
+    border: 2px solid #004bad;
+    box-shadow: 0px 0px 20px #004badbc;
+  }
+
+  .snoring-right {
+    width: 100%;
+    padding:20px;
+    height: inherit;
+  }
+
+  .snoring-right .right-img {
+    width: 100%;
+    min-height: 500px;
+    background-image: url("./Image/Couple.jpg");
+    background-size: cover;
+    background-position:center;
+    border-radius:20px;
+  }
+
+  /*--------- Our Process Section ---------*/
+  .our-process {
+    min-height: 60vh;
+    background-image: url("./Image/Oral\ Applience.png");
+    background-size: cover;
+    position: relative;
+  }
+
+  .our-process::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #edf5ff;
+    opacity: 0.7;
+  }
+
+  .our-process .container .row {
+    position: relative;
+    z-index: 3;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding:50px 20px;
+  }
+
+  .process-para {
+    font-size: 12px;
+    color: #004aad;
+    letter-spacing: 1px;
+  }
+
+  .process-title {
+    font-size:30px;
+    text-align: center;
+    font-weight:200;
+  }
+
+  .process-title span {
+    font-weight: 600;
+    font-style: italic;
+    font-family: "Playfair Display", serif;
+  }
+
+  .process-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .process-items {
+    padding: 0 20px 10px 20px;
+    height: 200px;
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    border-top: 5px solid #004aad;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  .process-items:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.205);
+  }
+
+  .process-item-no {
+    background-color: #004aad;
+    color: #ffffff;
+    height: 70px;
+    width: 70px;
+    font-size: 35px;
+    text-align: center;
+    align-content: center;
+    border-radius: 0 0 35px 35px;
+  }
+
+  .process-item-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+  }
+
+  .process-item-para {
+    font-size: 9px;
+    color: rgba(0, 0, 0, 0.35);
+    text-align: center;
+  }
+
+  /*-------- Booking Section -------*/
+
+  .booking {
+    min-height:50vh;
+    background-image: url("./Image/Oral\ Applience.png");
+    background-size: cover;
+    position: relative;
+  }
+
+  .booking::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #004aad;
+    opacity: 0.9;
+    z-index: 2;
+  }
+
+  .booking .container .row {
+    position: relative;
+    z-index: 3;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    overflow-y: hidden;
+  }
+
+  .booking-left {
+    height: inherit;
+    width: 100%;
+    padding:20px;
+  }
+
+  .booking-img {
+    width: 100%;
+    height: 400px;
+    background-image: url("./Image/Booking\ Section.png");
+    background-size: cover;
+    background-position: top;
+    border-radius: 20px;
+    position: static;
+    bottom: 0;
+  }
+
+  .booking-right {
+    min-height:15vh;
+    padding:50px 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+  }
+
+  .booking-para {
+    font-size:12px;
+    color: #ffffff;
+    letter-spacing: 1px;
+  }
+
+  .booking-title {
+    font-size:25px;
+    text-align: center;
+    font-weight: 200;
+    color: #ffffff;
+    line-height:30px;
+  }
+
+  .booking-title span {
+    font-style: italic;
+    font-weight: 550;
+    font-family: "Playfair Display", serif;
+  }
+
+  .booking-btn {
+    height: 40px;
+    width: 240px;
+    color: #004aad;
+    background-color: #ffffff;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 20px;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+
+  .booking-btn:hover {
+    color: #ffffff;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+  }
+
+  /*--------- Footer Section ---------*/
+
+  footer .container .row {
+    min-height:30vh;
+    padding:20px;
+  }
+
+  .footer-upper-items {
+    height:100%;
+    width:100% ;
+    padding:20px 0 ;
+  }
+
+  .footer-upper {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    gap:20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.229);
+    padding-bottom: 20px;
+  }
+
+  .footer-upper-item1 {
+    text-align: center;
+    width: 100%;
+    border-bottom:1px solid rgba(0, 0, 0, 0.239) ;
+  }
+
+   .footer-upper-item2 {
+    text-align: center;
+    width: 100%;
+    border-bottom:1px solid rgba(0, 0, 0, 0.239) ;
+  }
+
+   .footer-upper-item3 {
+    text-align: center;
+    width: 100%;
+    border-bottom:none;
+  }
+
+
+  .footer-upper-item1 .footer-header {
+    font-size:13px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+  .footer-upper-item1 p {
+    font-size:11px;
+    margin-bottom: 10px;
+  }
+
+  .footer-upper-item2 .footer-logo img {
+    width:200px;
+    margin-bottom: 35px;
+  }
+
+  .footer-links {
+    display: flex;
+    justify-content:center;
+    gap:10px;
+  }
+
+  .footer-links .fa-brands {
+    font-size:30px;
+    color: rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+  }
+
+  .footer-upper-item3 .footer-header {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+  .upper-items p {
+    font-size:11px;
+    margin-bottom: 12px;
+  }
+
+  .footer-lower {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px 0;
+  }
+
+  .footer-lower-para1 {
+    font-size:7px;
+    color: rgba(0, 0, 0, 0.749);
+  }
+
+  .footer-lower-para2 {
+    font-size:7px;
+    color: rgba(0, 0, 0, 0.749);
+  }
+}
